@@ -18,16 +18,15 @@ protocol CheckboxDelegate {
 }
 
 /**
- CCheckbox is a custom UIView class 
+ CCheckbox is a custom UIButton class 
  which represents custom checkbox with
  custom images
  **/
 
 @IBDesignable
-class CCheckbox: UIView {
+class CCheckbox: UIButton {
     //MARK:- Variables
     private var checkboxImage: UIImageView!
-    private var checkboxBtn: UIButton!
     
     @IBInspectable var normalImage: UIImage? {
         didSet { checkboxImage.image = normalImage }
@@ -37,7 +36,7 @@ class CCheckbox: UIView {
     
     
     /// when set this variable checkbox status changed
-    var isSelected: Bool = false {
+    var isCheckboxSelected: Bool = false {
         didSet {
             self.changeStatus()
         }
@@ -68,15 +67,11 @@ class CCheckbox: UIView {
         
         self.addSubview(checkboxImage)
         
-        // adding button to the CCheckbox view using its frame
-        checkboxBtn = UIButton(frame: componentsFrame)
-        checkboxBtn.setTitle("", for: .normal)
-        
-        checkboxBtn.addTarget(self,
+        self.setImage(nil, for: .normal)
+        self.setTitle("", for: .normal)
+        self.addTarget(self,
                               action: #selector(CCheckbox.didTouchUpInside(_:)),
                               for: .touchUpInside)
-        
-        self.addSubview(checkboxBtn)
         
         //Styling UIView
         self.backgroundColor = UIColor.clear
@@ -84,7 +79,7 @@ class CCheckbox: UIView {
     
     //MARK:- Checkbox Status
     private func changeStatus() {
-        if isSelected {
+        if isCheckboxSelected {
             UIView.transition(with: self.checkboxImage,
                                       duration:0.5,
                                       options: animation,
@@ -104,10 +99,10 @@ class CCheckbox: UIView {
     
     // MARK: IBActions
     func didTouchUpInside(_ sender: UIButton) {
-        self.isSelected = !self.isSelected
+        self.isCheckboxSelected = !self.isCheckboxSelected
         
         
-        if isSelected && delegate != nil {
+        if isCheckboxSelected && delegate != nil {
             delegate.didSelect(self)
         } else if delegate != nil {
             delegate.didDeselect(self)

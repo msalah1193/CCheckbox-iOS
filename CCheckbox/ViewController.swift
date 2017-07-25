@@ -25,9 +25,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         checkboxOne.delegate = self
         checkboxTwo.delegate = self
         checkboxThree.delegate = self
+        
+        //set custom animation
+        checkboxOne.animation = .showHideTransitionViews
     }
     
     //MARK:- Configuratiuon

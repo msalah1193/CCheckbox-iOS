@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,65 +22,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0f7-Zq-mDA">
-                                <rect key="frame" x="16" y="62" width="343" height="50"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jo6-Ps-viV" customClass="CCheckbox" customModule="CCheckbox" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="25" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="25" id="70A-Ve-daf"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="normalImage" value="ic_ok"/>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="ic_ok_selected"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checkbox 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZT8-1z-Ahi">
-                                        <rect key="frame" x="33" y="0.0" width="310" height="50"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="A5a-bM-J7W"/>
-                                </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="elG-o3-cPY">
-                                <rect key="frame" x="16" y="142" width="343" height="50"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oMD-3S-ZnS" customClass="CCheckbox" customModule="CCheckbox" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="25" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="normalImage" value="ic_credit"/>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="ic_credit_selected"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checkbox 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sct-PV-VXv">
-                                        <rect key="frame" x="33" y="0.0" width="310" height="50"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="IL9-Da-vhm"/>
-                                </constraints>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hkD-9X-7lz">
-                                <rect key="frame" x="16" y="222" width="343" height="50"/>
+                                <rect key="frame" x="16" y="84" width="343" height="50"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ETf-UG-nyR" customClass="CCheckbox" customModule="CCheckbox" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJa-OdK-jAi" customClass="CCheckbox" customModule="CCheckbox" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="25" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="Gk3-95-bbE"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="image" keyPath="normalImage" value="ic_checkbox_empty"/>
                                             <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="ic_checkbox_selected"/>
                                         </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checkbox 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bN-cc-Xap">
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checkbox 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bN-cc-Xap">
                                         <rect key="frame" x="33" y="0.0" width="310" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -88,29 +43,74 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="hjc-oB-gLK"/>
+                                    <constraint firstAttribute="height" constant="50" id="isS-m6-N5I"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OM9-tC-4zV">
+                                <rect key="frame" x="16" y="164" width="343" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFY-uU-VTO" customClass="CCheckbox" customModule="CCheckbox" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="50"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="normalImage" value="ic_credit"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="ic_credit_selected"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checkbox 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dt0-cY-26y">
+                                        <rect key="frame" x="33" y="0.0" width="310" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XIl-Am-BUb"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CtV-6P-Juk">
+                                <rect key="frame" x="16" y="244" width="343" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86s-eL-uMR" customClass="CCheckbox" customModule="CCheckbox" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="50"/>
+                                        <state key="normal" title="Rww" image="ic_checkbox_empty">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="normalImage" value="ic_ok"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="ic_ok_selected"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checkbox 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhN-yz-Bvc">
+                                        <rect key="frame" x="33" y="0.0" width="310" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HWj-GZ-Jam"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hkD-9X-7lz" firstAttribute="top" secondItem="elG-o3-cPY" secondAttribute="bottom" constant="30" id="ETg-UQ-i0p"/>
-                            <constraint firstItem="elG-o3-cPY" firstAttribute="top" secondItem="0f7-Zq-mDA" secondAttribute="bottom" constant="30" id="LZF-mx-xdW"/>
-                            <constraint firstItem="0f7-Zq-mDA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="42" id="Nyr-dI-dgA"/>
-                            <constraint firstItem="0f7-Zq-mDA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PtK-ko-MGc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0f7-Zq-mDA" secondAttribute="trailing" id="RZe-dE-nEM"/>
-                            <constraint firstItem="ETf-UG-nyR" firstAttribute="width" secondItem="oMD-3S-ZnS" secondAttribute="width" id="X3a-tD-pRr"/>
-                            <constraint firstItem="elG-o3-cPY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="i6H-jt-xCi"/>
-                            <constraint firstItem="hkD-9X-7lz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mP0-wX-Pdj"/>
-                            <constraint firstItem="oMD-3S-ZnS" firstAttribute="width" secondItem="Jo6-Ps-viV" secondAttribute="width" id="tD6-OP-z76"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="hkD-9X-7lz" secondAttribute="trailing" id="wen-fT-nJf"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="elG-o3-cPY" secondAttribute="trailing" id="yjA-fo-l0U"/>
+                            <constraint firstItem="CtV-6P-Juk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3FJ-Vz-4qZ"/>
+                            <constraint firstItem="OM9-tC-4zV" firstAttribute="top" secondItem="hkD-9X-7lz" secondAttribute="bottom" constant="30" id="68N-mq-X32"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OM9-tC-4zV" secondAttribute="trailing" id="HT5-el-zr9"/>
+                            <constraint firstItem="hkD-9X-7lz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="OfA-uE-Srm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hkD-9X-7lz" secondAttribute="trailing" id="Vks-OZ-56t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CtV-6P-Juk" secondAttribute="trailing" id="ccY-uX-K50"/>
+                            <constraint firstItem="CtV-6P-Juk" firstAttribute="top" secondItem="OM9-tC-4zV" secondAttribute="bottom" constant="30" id="fhA-ph-qsl"/>
+                            <constraint firstItem="hkD-9X-7lz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hHL-M6-vjp"/>
+                            <constraint firstItem="SFY-uU-VTO" firstAttribute="width" secondItem="TJa-OdK-jAi" secondAttribute="width" id="kez-zh-HrE"/>
+                            <constraint firstItem="86s-eL-uMR" firstAttribute="width" secondItem="TJa-OdK-jAi" secondAttribute="width" id="mym-db-ytt"/>
+                            <constraint firstItem="OM9-tC-4zV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rlU-dB-0cy"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="checkboxOne" destination="Jo6-Ps-viV" id="qNs-im-o0f"/>
-                        <outlet property="checkboxThree" destination="ETf-UG-nyR" id="0Uv-Bl-8UE"/>
-                        <outlet property="checkboxTwo" destination="oMD-3S-ZnS" id="dfx-Lb-sMO"/>
+                        <outlet property="checkboxOne" destination="TJa-OdK-jAi" id="gaX-5X-rGT"/>
+                        <outlet property="checkboxThree" destination="86s-eL-uMR" id="RJ4-hg-ZEo"/>
+                        <outlet property="checkboxTwo" destination="SFY-uU-VTO" id="AcW-Uz-ne9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
