@@ -29,7 +29,9 @@ class CCheckbox: UIButton {
     private var checkboxImage: UIImageView!
     
     @IBInspectable var normalImage: UIImage? {
-        didSet { checkboxImage.image = normalImage }
+        didSet {
+            checkboxImage.image = normalImage
+        }
     }
     
     @IBInspectable var selectedImage: UIImage?
@@ -57,7 +59,15 @@ class CCheckbox: UIButton {
     }
     
     private func initComponent () {
-        // build component frame 
+        
+        //Check Button Type Value
+        if self.buttonType != .system
+            && self.buttonType != .custom {
+            
+            fatalError("Button Type Error. Please Make Button Type System or Custom")
+        }
+        
+        // build component frame
         let componentsFrame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
         
         // adding imageView to the CCheckbox view using its frame
