@@ -33,6 +33,7 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="image" keyPath="normalImage" value="ic_checkbox_empty"/>
                                             <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="ic_checkbox_selected"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isCheckboxSelected" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checkbox 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bN-cc-Xap">
@@ -54,6 +55,7 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="image" keyPath="normalImage" value="ic_credit"/>
                                             <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="ic_credit_selected"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isCheckboxSelected" value="NO"/>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checkbox 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dt0-cY-26y">
@@ -70,11 +72,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CtV-6P-Juk">
                                 <rect key="frame" x="16" y="244" width="343" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86s-eL-uMR" customClass="CCheckbox" customModule="CCheckbox" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86s-eL-uMR" customClass="CCheckbox" customModule="CCheckbox" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="25" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="image" keyPath="normalImage" value="ic_ok"/>
                                             <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="ic_ok_selected"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isCheckboxSelected" value="NO"/>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checkbox 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhN-yz-Bvc">
