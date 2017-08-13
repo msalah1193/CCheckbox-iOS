@@ -7,4 +7,4 @@ CCheckbox is a custom UIButton which represents custom checkbox component with c
 - Include CCheckbox class to your project files 
 - Drag UIButton to your UIViewController 
 - Make it inherit from CCheckbox 
-- Edit Normal Image & Selected Image from Attributes Inspector
+- Edit Normal Image, Selected Image and Selected State from Attributes Inspector
